@@ -1,13 +1,11 @@
 
 class Solution(object):
     def hasCycle(self, head):
-        curr=head
-        
-        visited_position=set()
-        while curr is not None:
-            if curr in visited_position:
+        tooslow=head
+        fast=head
+        while fast and fast.next is not None:
+            tooslow=tooslow.next
+            fast=fast.next.next
+            if tooslow==fast:
                 return True
-            visited_position.add(curr)
-            curr=curr.next
-            
         return False
