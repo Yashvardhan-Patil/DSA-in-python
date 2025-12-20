@@ -1,11 +1,11 @@
 
 class Solution(object):
     def hasCycle(self, head):
-        tooslow=head
+        slow=head
         fast=head
         while fast and fast.next is not None:
-            tooslow=tooslow.next
+            slow=slow.next
             fast=fast.next.next
-            if tooslow==fast:
+            if slow==fast:
                 return True
         return False
