@@ -8,7 +8,7 @@ class Solution(object):
             slow=slow.next
             fast=fast.next.next
             if slow==fast:
-                count=0
+                count=1
                 slow=slow.next
                 while slow!=fast:
                     count+=1
