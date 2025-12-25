@@ -1,5 +1,5 @@
 class Solution(object):
-    def removeNthFromEnd(self, head,key):
+    def delete(self, head,key):
         temp=head
         curr=None
         new_node=None
