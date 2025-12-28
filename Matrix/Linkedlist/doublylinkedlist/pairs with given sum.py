@@ -35,10 +35,11 @@ class Solution(object):
         while right.next is not None:
             right=right.next
         left=head
-        while left<right:
+        while left.val<right.val:
             while left.val+right.val!=target:
                 head=head.prev
             result.append[[left.val,right.val]]
             left=left.next
             right=right.prev
         return result
+    

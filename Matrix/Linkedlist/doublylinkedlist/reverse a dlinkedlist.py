@@ -21,11 +21,10 @@ class Solution(object):
         prev=None
         while curr is not None:
             front=curr.next
-            curr=front
-            
             curr.next=prev
             curr.prev=front
-            curr=curr.next
+            prev=curr
+            curr=front
 
         return prev
 
