@@ -12,9 +12,9 @@ def fun(index, subset):
     fun(index + 1, subset)
 
 
-result = []      # list to store all subsets
+result = []      
 fun(0, [])
 
-# printing subsets
+
 for s in result:
     print(s)
