@@ -1,5 +1,6 @@
 class Solution(object):
     def generateParenthesis(self, n):
+        n=2
         brackets = [""] * n * 2
         result = []
 
